@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Login | SaFi Njema</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-box">
+    <div class="auth-logo">
+      <img src="image/Safi Njema logo No Background.png" alt="SaFi Njema">
+      <h2>Welcome Back</h2>
+      <p class="auth-sub">Sign in to manage your bookings</p>
+    </div>
+    <form id="loginForm">
+      <div class="form-group"><label>Email Address</label><input type="email" id="lEmail" placeholder="jane@example.com" required></div>
+      <div class="form-group"><label>Password</label><input type="password" id="lPass" placeholder="Your password" required></div>
+      <button type="submit" class="form-submit"><i class="fa fa-sign-in-alt"></i> &nbsp;Sign In</button>
+      <div class="alert" id="loginMsg"></div>
+    </form>
+    <p class="auth-footer">Forgot your password? <a href="#">Reset it</a></p>
+    <p class="auth-footer">Don't have an account? <a href="register.html">Register here</a></p>
+    <p class="auth-footer" style="margin-top:16px;"><a href="index.html" style="color:var(--muted);"><i class="fa fa-arrow-left"></i> Back to Home</a></p>
+  </div>
+</div>
+<script src="Java.js"></script>
+<script>
+document.getElementById('loginForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const msg=document.getElementById('loginMsg');
+  const email=document.getElementById('lEmail').value.trim();
+  const pass=document.getElementById('lPass').value;
+  if(!email||!pass){msg.textContent='Please fill in all fields.';msg.className='alert err';return;}
+  msg.textContent='✓ Signed in successfully!';msg.className='alert ok';
+  setTimeout(()=>window.location.href='index.html',1500);
+});
+</script>
+</body></html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gallery | SaFi Njema</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar">🌿 Eco-Friendly Cleaning Solutions &nbsp;|&nbsp; <a href="tel:+27713599995">+27 71 359 9995</a></div>
+<nav class="navbar">
+  <div class="logo"><a href="index.html"><img src="image/Safi Njema logo No Background.png" alt="SaFi Njema"></a></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li>
+    <li><a href="About.html">About</a></li><li><a href="Galary.html" class="active">Gallery</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="login.html" class="nav-auth">Login</a><a href="register.html" class="nav-auth reg">Register</a>
+    <a href="Book.html" class="book-btn"><i class="fa fa-calendar-check"></i> Book Now</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+</nav>
+
+<div class="page-hero">
+  <div class="badge">Our Work</div>
+  <h1>Cleaning Gallery</h1>
+  <p>Real results from real clients. Every job is a transformation.</p>
+</div>
+
+<section class="section alt">
+  <div style="max-width:1100px;margin:0 auto;">
+    <!-- Filter -->
+    <div class="gallery-filter reveal">
+      <button class="filter-btn active" data-cat="all" onclick="filterGallery('all')">All Work</button>
+      <button class="filter-btn" data-cat="carpet" onclick="filterGallery('carpet')">Carpet</button>
+      <button class="filter-btn" data-cat="couch" onclick="filterGallery('couch')">Couch</button>
+      <button class="filter-btn" data-cat="mattress" onclick="filterGallery('mattress')">Mattress</button>
+      <button class="filter-btn" data-cat="commercial" onclick="filterGallery('commercial')">Commercial</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" data-cat="carpet" onclick="openLightbox('image/before&after.jpg')">
+        <img src="image/before&after.jpg" alt="Carpet before & after">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Carpet Clean</div>
+      </div>
+      <div class="gallery-item" data-cat="carpet" onclick="openLightbox('image/before-after-cleaning-on-old-600nw-2370271001.webp')">
+        <img src="image/before-after-cleaning-on-old-600nw-2370271001.webp" alt="Carpet restoration">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Carpet Restore</div>
+      </div>
+      <div class="gallery-item" data-cat="carpet" onclick="openLightbox('image/carpet-cleaning-before-after-1.jpg')">
+        <img src="image/carpet-cleaning-before-after-1.jpg" alt="Carpet cleaning">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Deep Carpet</div>
+      </div>
+      <div class="gallery-item" data-cat="commercial" onclick="openLightbox('image/gallery-02.jpg')">
+        <img src="image/gallery-02.jpg" alt="Commercial cleaning">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Commercial</div>
+      </div>
+      <div class="gallery-item" data-cat="couch" onclick="openLightbox('image/residential.jpg')">
+        <img src="image/residential.jpg" alt="Couch cleaning">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Sofa Clean</div>
+      </div>
+      <div class="gallery-item" data-cat="commercial" onclick="openLightbox('image/commercial.jpeg')">
+        <img src="image/commercial.jpeg" alt="Office cleaning">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Office Clean</div>
+      </div>
+      <div class="gallery-item" data-cat="Tiles Grout Cleaning" onclick="openLightbox('image/10.jpeg')">
+        <img src="image/10.jpeg" alt="Office cleaning">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Tiles Grout Cleaning</div>
+      </div>
+      <div class="gallery-item" data-cat="mattresses" onclick="openLightbox('image/9.jpeg')">
+        <img src="image/9.jpeg" alt="Mattress cleaning">
+        <div class="gallery-overlay"><div class="go-icon"><i class="fa fa-search-plus"></i></div></div>
+        <div class="gallery-label">Mattress Cleaning</div>
+      </div>
+    </div>
+
+    <!-- Videos -->
+    <div class="section-hd c reveal" style="margin-top:60px;">
+      <span class="section-label">Behind the Scenes</span>
+      <h2 class="section-title">Cleaning Videos</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="g2 reveal">
+      <div style="background:var(--white);border-radius:var(--r-md);overflow:hidden;border:1px solid var(--g200);box-shadow:var(--sh-sm);">
+        <video controls style="width:100%;display:block;">
+          <source src="videos/video1.mp4" type="video/mp4">Your browser does not support video.
+        </video>
+        <div style="padding:16px;"><strong style="font-size:15px;">Deep Carpet Extraction</strong><p style="font-size:13px;color:var(--muted);margin-top:4px;">Hot-water extraction in action</p></div>
+      </div>
+      <div style="background:var(--white);border-radius:var(--r-md);overflow:hidden;border:1px solid var(--g200);box-shadow:var(--sh-sm);">
+        <video controls style="width:100%;display:block;">
+          <source src="videos/video2.mp4" type="video/mp4">Your browser does not support video.
+        </video>
+        <div style="padding:16px;"><strong style="font-size:15px;">Sofa Restoration</strong><p style="font-size:13px;color:var(--muted);margin-top:4px;">Before & after upholstery clean</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img id="lbImg" src="" alt="Gallery image">
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><img src="image/Safi Njema logo No Background.png" class="footer-logo" alt="SaFi Njema"><p>Eco-friendly professional cleaning across Cape Town.</p><div class="social-icons"><a href="https://www.facebook.com/profile.php?id=61578801756810"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="https://wa.me/27713599995" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></i></a><a href="#" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a></div></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="industrial.html">Industrial</a></li><li><a href="events.html">Events</a></li></ul></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="About.html">About Us</a></li><li><a href="Galary.html">Gallery</a></li><li><a href="Book.html">Book Cleaning</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><div class="footer-contact"><p><i class="fa fa-phone"></i> +27 71 359 9995</p><p><i class="fa fa-envelope"></i> safinjema@outlook.com</p><p><i class="fa fa-map-marker-alt"></i> Cape Town, South Africa</p></div></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 SaFi Njema Cleaning Services</span><span>Eco-Friendly Cleaning Solutions 🌿</span></div>
+</footer>
+<a href="https://wa.me/27713599995" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="Java.js"></script>
+</body></html>

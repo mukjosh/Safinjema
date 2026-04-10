@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SaFi Njema – Eco-Friendly Cleaning Services | Cape Town</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="Image/png" href="image/apple-touch-icon.png">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">🌿 Eco-Friendly Cleaning Solutions for Home &amp; Business &nbsp;|&nbsp; <a href="tel:+27713599995">+27 71 359 9995</a></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo"><a href="index.html"><img src="image/Safi Njema logo No Background.png" alt="SaFi Njema Logo"></a></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Galary.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="search-bar">
+    <input type="text" id="sSearch" placeholder="Search services…">
+    <button onclick="doSearch()"><i class="fa fa-search"></i></button>
+  </div>
+  <div class="nav-actions">
+    <a href="login.html" class="nav-auth">Login</a>
+    <a href="register.html" class="nav-auth reg">Register</a>
+    <a href="Book.html" class="book-btn"><i class="fa fa-calendar-check"></i> Book Now</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero-full">
+  <div style="position:relative;z-index:1;">
+    <div class="hero-badge" style="display:inline-block;background:rgba(72,199,142,.2);border:1px solid rgba(72,199,142,.4);border-radius:50px;padding:5px 18px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px;">Cape Town's #1 Eco Cleaning</div>
+    <h1>Professional <span>Eco Cleaning</span><br>You Can Trust</h1>
+    <p>Carpet · Couch · Mattress · Post-Construction · Pest Control — all with eco-safe products protecting your family and the planet.</p>
+    <div class="hero-ctas">
+      <a href="Book.html" class="btn-p"><i class="fa fa-calendar-check"></i> Book a Clean</a>
+      <a href="services.html" class="btn-o"><i class="fa fa-list"></i> Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item reveal"><strong>1,500+</strong><span>Homes Cleaned</span></div>
+  <div class="stat-item reveal"><strong>500+</strong><span>Happy Clients</span></div>
+  <div class="stat-item reveal"><strong>100%</strong><span>Eco-Safe</span></div>
+  <div class="stat-item reveal"><strong>10+</strong><span>Cleaning Experts</span></div>
+  <div class="stat-item reveal"><strong>24/7</strong><span>Customer Support</span></div>
+</div>
+
+<!-- SERVICES -->
+<section class="section alt">
+  <div class="section-hd c reveal">
+    <span class="section-label">What We Do</span>
+    <h2 class="section-title">Our Cleaning Services</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Professional, reliable and eco-friendly cleaning for every space.</p>
+  </div>
+  <div class="g4 reveal">
+    <div class="service-card">
+      <img src="image/residential.jpg" alt="Residential Cleaning" class="card-img">
+      <div class="card-body">
+        <h3>Residential</h3>
+        <p>Deep home cleaning — carpets, couches, mattresses, windows and full sanitisation.</p>
+        <a href="residential.html" class="card-link">View Services <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="image/commercial.jpeg" alt="Commercial Cleaning" class="card-img">
+      <div class="card-body">
+        <h3>Commercial</h3>
+        <p>Office and workplace cleaning to maintain hygienic, productive environments.</p>
+        <a href="commercial.html" class="card-link">View Services <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="image/industrial-shutdown-cleaning.webp" alt="Industrial Cleaning" class="card-img">
+      <div class="card-body">
+        <h3>Industrial</h3>
+        <p>Heavy-duty cleaning for factories, warehouses and large-scale facilities.</p>
+        <a href="industrial.html" class="card-link">View Services <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="image/events.jpeg" alt="Events Cleaning" class="card-img">
+      <div class="card-body">
+        <h3>Events</h3>
+        <p>Pre-event, during-event and post-event cleaning for spotless venues.</p>
+        <a href="events.html" class="card-link">View Services <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section">
+  <div class="section-hd c reveal">
+    <span class="section-label">Why SaFi Njema</span>
+    <h2 class="section-title">Cleaning Done Right</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="g4 reveal">
+    <div class="icon-card">
+      <div class="ic-icon">🌿</div>
+      <h4>Eco-Safe Products</h4>
+      <p>Certified green cleaning solutions safe for children, pets and allergies.</p>
+    </div>
+    <div class="icon-card">
+      <div class="ic-icon">🏆</div>
+      <h4>Trained Professionals</h4>
+      <p>Background-checked, experienced technicians delivering consistent quality.</p>
+    </div>
+    <div class="icon-card">
+      <div class="ic-icon">⏱️</div>
+      <h4>Always On Time</h4>
+      <p>We respect your schedule and complete every job to the highest standard.</p>
+    </div>
+    <div class="icon-card">
+      <div class="ic-icon">💯</div>
+      <h4>100% Satisfaction</h4>
+      <p>Not happy? We'll come back and make it right — guaranteed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section alt">
+  <div class="section-hd c reveal">
+    <span class="section-label">Client Reviews</span>
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="g3 reveal">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <blockquote>"My carpets had 3-year-old stains. SaFi Njema's team arrived on time and the results were astonishing — like brand new!"</blockquote>
+      <div class="author"><div class="avatar">AM</div><div><strong>Amina Mohamed</strong><span>Claremont, Cape Town</span></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Used them for our whole office complex — all floors spotless. Staff commented on how fresh everything smelled. Will use monthly!"</blockquote>
+      <div class="author"><div class="avatar">DK</div><div><strong>David Kamau</strong><span>Century City Office Park</span></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <blockquote>"The mattress cleaning is incredible. My son has asthma and has slept so much better since. Totally worth every cent."</blockquote>
+      <div class="author"><div class="avatar">FW</div><div><strong>Faith Wanjiru</strong><span>Bellville, Cape Town</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section" style="background:linear-gradient(135deg,var(--green-dk),var(--green));text-align:center;padding:70px 6%;">
+  <div class="reveal">
+    <span class="section-label" style="background:rgba(255,255,255,.15);color:#fff;">Ready to Book?</span>
+    <h2 class="section-title" style="color:#fff;margin-top:10px;">Get Your Space Sparkling Clean</h2>
+    <p style="color:rgba(255,255,255,.8);font-size:16px;max-width:480px;margin:0 auto 30px;">Book online in minutes. Confirmation within 30 minutes. Same-day service available.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="Book.html" class="btn-p" style="background:#fff;color:var(--green);"><i class="fa fa-calendar-check"></i> Book Now</a>
+      <a href="https://wa.me/27713599995" class="btn-o" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="image/Safi Njema logo No Background.png" alt="SaFi Njema" class="footer-logo">
+      <p>Eco-friendly professional cleaning services for homes, offices and industries across Cape Town.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61578801756810" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/safinjema_clean/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/27713599995" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@safinjema_clean?lang=en" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></i></a>
+        <a href="#" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="residential.html">Residential Cleaning</a></li>
+        <li><a href="commercial.html">Commercial Cleaning</a></li>
+        <li><a href="industrial.html">Industrial Cleaning</a></li>
+        <li><a href="events.html">Events Cleaning</a></li>
+        <li><a href="services.html">Pest Control</a></li>
+        <li><a href="services.html">Bin Cleaning</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="Galary.html">Gallery</a></li>
+        <li><a href="Book.html">Book Cleaning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact">
+        <p><i class="fa fa-phone"></i> +27 71 359 9995</p>
+        <p><i class="fa fa-envelope"></i>safinjema@outlook.com</p>
+        <p><i class="fa fa-map-marker-alt"></i> Cape Town, South Africa</p>
+        <p><i class="fa fa-clock"></i> Mon–Sat: 8am – 5pm</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 SaFi Njema Cleaning Services. All rights reserved.</span>
+    <span>Eco-Friendly Cleaning Solutions 🌿</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/27713599995?text=Hello%20SaFi%20Njema!" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="Java.js"></script>
+</body>
+</html>
